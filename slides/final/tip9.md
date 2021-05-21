@@ -18,7 +18,7 @@ const handleSaveCalculation = ({key}) => {
     }
 }
 
-handleSaveCalculation({'save-copy'})
+handleSaveCalculation({key: 'save-copy'})
 ``` 
 
 ```jsx
