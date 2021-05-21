@@ -1,4 +1,4 @@
-const apiKey = 'key'
+const apiKey = null
 const isInvalidApiKey = apiKey === null
 
 export function getCoffee(type, size, country, hasIce) {
