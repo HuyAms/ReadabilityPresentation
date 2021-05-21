@@ -13,6 +13,7 @@ function App() {
         setError(null)
         setCoffee(null)
 
+        // 💣
         getCoffee('cappuccino', 'small', 'finland', true).then(coffee => {
             setIsLoading(false)
             setError(null)

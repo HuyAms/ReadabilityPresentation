@@ -1,4 +1,4 @@
-const apiKey = null
+const apiKey = 's'
 const isInvalidApiKey = apiKey === null
 
 export function getCoffee(type, size, country, hasIce) {
@@ -36,8 +36,6 @@ export function getCoffee(type, size, country, hasIce) {
         default:
             drink = 'Unknown drink';
     }
-
-    console.log("TYPE: ", type)
 
     const result = isInvalidApiKey ? null : {drink, size, country, hasIce}
 
