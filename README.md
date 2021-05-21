@@ -5,11 +5,25 @@
 
 ```jsx
 console.log("hello world")
-console.warning("this is a warning")
+console.warn("this is a warning")
 console.error("this is an error")
 console.info("this is info")
 console.debug("this is debug")
 console.trace("show trace")
+``` 
+
+👉 If you try the `console.warn`, you will get the trace which means that it is easier to debug the code
+
+Let's try other console functions yourself :) 
+
+⚠️ Original code
+```jsx
+console.log("Error: API key should not be empty")
+``` 
+
+👉 Refactor
+```jsx
+console.error("Error: API key should not be empty")
 ``` 
 
 ## 2. Avoid negative names for boolean variables
