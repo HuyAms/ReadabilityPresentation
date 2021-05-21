@@ -488,6 +488,10 @@ export const fetchOrdersStart = () => {
 ```
 
 👉️ [Abstraction](https://github.com/vinhlee95/awesome-react-typescript-boilerplate/blob/develop/src/modules/commons/moduleActions.ts)
+
+I dare you understand the abstraction code without clicking the link. And even go to that link, you have to read all the code to understand that abstraction.
+
+If you want to take a deep look into this, checkout [AHA Programming](https://kentcdodds.com/blog/aha-programming) and [Goodbye, Clean Code](https://overreacted.io/goodbye-clean-code/)
 ```jsx
 // Action
 const moduleName = 'order'
