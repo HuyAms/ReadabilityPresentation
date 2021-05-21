@@ -408,7 +408,7 @@ const handleSaveCalculation = ({key}) => {
         'default': throw Error('Unknown action')
     }
     
-    (actions[key] || 'default')()
+    return (key in actions) ? actions[key] : actions['default']
 }
 
 handleSaveCalculation({key: 'save-copy'})
@@ -441,8 +441,8 @@ const menu = {
     'default': 'Unknown drink'
 }
 
-const drink = menu[type]
-``` 
+const drink = menu[type] || menu['default']
+```
 
 # 10. Avoid Hasty Abstractions
 
