@@ -9,7 +9,7 @@ const menu = {
     'default': 'Unknown drink'
 }
 
-const availableCountries = ['finland', 'german', 'vietnam', 'russia']
+const availableCountries = ['finland', 'germany', 'vietnam', 'russia']
 
 export function getCoffee(options = {}) {
 

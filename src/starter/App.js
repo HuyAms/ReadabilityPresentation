@@ -51,7 +51,7 @@ function App() {
         <div>
             <button onClick={handleButtonClick}>Get Coffee</button>
             {renderResult(true)}
-            <p>Available countries: finland, german, vietnam, russia</p>
+            <p>Available countries: finland, germany, vietnam, russia</p>
         </div>
     )
 }

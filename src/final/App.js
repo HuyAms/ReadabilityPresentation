@@ -59,7 +59,7 @@ function App() {
         <div>
             <button onClick={handleButtonClick}>Get Coffee</button>
             {isAuthenticated ? renderAuthenticatedApp() : renderUnAuthenticatedApp()}
-            <p>Available countries: finland, german, vietnam, russia</p>
+            <p>Available countries: finland, germany, vietnam, russia</p>
         </div>
     )
 }

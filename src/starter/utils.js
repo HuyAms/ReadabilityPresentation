@@ -14,7 +14,7 @@ export function getCoffee(type, size, country, hasIce) {
     }
 
     if (country !== 'finland' &&
-        country !== 'german' &&
+        country !== 'germany' &&
         country !== 'vietnam' &&
         country !== 'russia' &&
         type !== '💣'

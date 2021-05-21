@@ -130,7 +130,7 @@ function verifyThatUserHasAddedCreditCard(user) {}
 ⚠️ Original code
 ```jsx
  if (country !== 'finland' &&
-    country !== 'german' &&
+    country !== 'germany' &&
     country !== 'vietnam' &&
     country !== 'russia' &&
     type !== '💣'
@@ -143,7 +143,7 @@ function verifyThatUserHasAddedCreditCard(user) {}
 ```jsx
 const isInAvailableCountries = (
     country === 'finland' ||
-    country === 'german' ||
+    country === 'germany' ||
     country === 'vietnam' ||
     country === 'russia'
 )
@@ -157,7 +157,7 @@ if (!isInAvailableCountries || hasBoom) {
 
 🎁 Create a better condition
 ```jsx
-const availableCountries = ['finland', 'german', 'vietnam', 'russia']
+const availableCountries = ['finland', 'germany', 'vietnam', 'russia']
 const isInAvailableCountries = availableCountries.includes(country)
 
 const hasBoom = type === '💣'
@@ -191,10 +191,10 @@ isError: false
 ``` 
 
 ```jsx
-const LOADING_SATE = 'LOADING_SATE'
+const LOADING_STATE = 'LOADING_STATE'
 const ERROR_STATE = 'ERROR_STATE'
 
-const state = LOADING_SATE
+const state = LOADING_STATE
 ``` 
 
 ⚠️ Original code
@@ -221,7 +221,7 @@ function handleButtonClick() {
 
 👉 Refactor
 ```jsx
-const sate = {
+const state = {
     idle: 'idle',
     loading: 'loading',
     error: 'error',
@@ -230,16 +230,16 @@ const sate = {
 
 const [error, setError] = React.useState(null)
 const [coffee, setCoffee] = React.useState(null)
-const [status, setStatus] = React.useState(sate.idle) 
+const [status, setStatus] = React.useState(state.idle) 
 
 function handleButtonClick() {
-    setStatus(sate.loading)
+    setStatus(state.loading)
 
     getCoffee('cappuccino', 'small', 'finland', true).then(coffee => {
-        setStatus(sate.success)
+        setStatus(state.success)
         setCoffee(coffee)
     }).catch(error => {
-        setStatus(sate.error)
+        setStatus(state.error)
         setError(error)
     })
 }

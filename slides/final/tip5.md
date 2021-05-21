@@ -16,7 +16,7 @@ function verifyThatUserHasAddedCreditCard(user) {}
 ⚠️ Original code
 ```jsx
  if (country !== 'finland' &&
-    country !== 'german' &&
+    country !== 'germany' &&
     country !== 'vietnam' &&
     country !== 'russia' &&
     type !== '💣'
@@ -29,7 +29,7 @@ function verifyThatUserHasAddedCreditCard(user) {}
 ```jsx
 const isInAvailableCountries = (
     country === 'finland' ||
-    country === 'german' ||
+    country === 'germany' ||
     country === 'vietnam' ||
     country === 'russia'
 )
@@ -43,7 +43,7 @@ if (!isInAvailableCountries || hasBoom) {
 
 🎁 Create a better condition
 ```jsx
-const availableCountries = ['finland', 'german', 'vietnam', 'russia']
+const availableCountries = ['finland', 'germany', 'vietnam', 'russia']
 const isInAvailableCountries = availableCountries.includes(country)
 
 const hasBoom = type === '💣'

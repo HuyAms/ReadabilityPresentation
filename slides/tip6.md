@@ -22,10 +22,10 @@ isError: false
 ``` 
 
 ```jsx
-const LOADING_SATE = 'LOADING_SATE'
+const LOADING_STATE = 'LOADING_STATE'
 const ERROR_STATE = 'ERROR_STATE'
 
-const state = LOADING_SATE
+const state = LOADING_STATE
 ``` 
 
 ⚠️ Original code
