@@ -445,7 +445,7 @@ const menu = {
 const drink = menu[type] || menu['default']
 ```
 
-# 10. Avoid Hasty Abstractions
+## 10. Avoid Hasty Abstractions
 
 > 😕 I don't know how to create a good abstraction but I've created many bad ones
 
@@ -458,6 +458,8 @@ const drink = menu[type] || menu['default']
 📚 [Goodbye, Clean Code](https://overreacted.io/goodbye-clean-code/)
 
 ⚠️ [My React Boilerplate](https://github.com/vinhlee95/awesome-react-typescript-boilerplate)
+
+The code below is used to fetch an order and I am using Redux for the state management. What a boilerplate!!! Let's make an abstraction which I will regret later
 
 Fetch an order
 ```jsx
