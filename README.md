@@ -403,12 +403,13 @@ handleSaveCalculation({key: 'save-copy'})
 ```jsx
 const handleSaveCalculation = ({key}) => {
     const actions = {
-        'save-copy': saveCopy(),
-        'override': override(),
-        'default': throw Error('Unknown action')
+        'save-copy': saveCopy,
+        'override': override,
+        'default': () => throw Error('Unknown action')
     }
     
-    return (key in actions) ? actions[key] : actions['default']
+    const action = key in actions ? actions[key] : actions['default']
+    return action();
 }
 
 handleSaveCalculation({key: 'save-copy'})
